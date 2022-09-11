@@ -1,0 +1,94 @@
+*{
+  margin: 0 auto;
+  padding: 0 auto;
+}
+h1{
+
+  font-family: 'Colonna MT', sans-serif;
+  font-size: 80px;
+  line-height: 90px;
+  text-align: center;
+  color: #808080;
+}
+.contenedor{
+  display: flex;
+}
+.texto{
+  width: 100%;
+  padding: 0% 3% 0% 3%;
+}
+.texto p{
+  font-family: 'Goudy Old Style', serif!important;
+  font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1920 - 320)));
+  font-weight: 400;
+  line-height: 120%;
+  text-align: justify;
+  color: #123B40;
+  margin-bottom: clamp(0.2%, 5vw, 4%);
+  width: 100%;
+}
+.imagen{
+  display:flex;
+  width: 70vw;
+  max-width: 1920px;
+  min-width: 30px;
+  margin: auto;
+  padding: 0% 3% 3% 3%;
+}
+.imagen img{
+  width: 100%;
+  border: 4px solid #A68053;
+  border-radius: 25px;
+}
+.imagenes{
+  display:flex;
+  width: 80vw;
+  max-width: 1920px;
+  min-width: 30px;
+  padding: 0% 3% 3% 3%;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+}
+.imagenes img{
+  width: 100%;
+  border: 0.2vw solid #A68053;
+  border-radius: 2vw;
+}
+
+@media (max-width:1370px) {
+  .contenedor{
+    display: block;
+  }
+  .imagenes{
+    display: block;
+  }
+  .imagenes div{
+    margin: 20px 0px;
+    text-align: center;
+  }
+  .imagenes img{
+    width: 355px;
+  }
+
+}
+@media (max-width:920px) {
+  h1{
+    line-height: 30px;
+    font-size: 40px;
+  }
+  .contenedor{
+    display: block;
+  }
+  .imagenes{
+    display: block;
+  }
+
+  .imagenes div{
+    margin: 20px 0px;
+    text-align: center;
+  }
+  .imagenes img{
+    width: 250px;
+  }
+}
